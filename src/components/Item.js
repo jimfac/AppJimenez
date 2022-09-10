@@ -1,11 +1,13 @@
 const Item = ({puesto,empresa,lugar}) => {
   return (
-    <div>
-        <h3>{puesto}</h3> 
-        <h4>{empresa}</h4>
-        <h5>{lugar}</h5>
-    </div>
-        
+      
+        <div className=" m-2 p-2 bg-stone-300">
+          <div>{puesto}</div> 
+          <div>{empresa}</div>
+          <div>{lugar}</div>
+        </div>
+      
+  
      
   )
 }

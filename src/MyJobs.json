@@ -1,73 +1,49 @@
 [
 {
     "id": "1",
-    "rubro": "Industrial",
+    "categoryId": "Industrial",
     "puesto":"Jefe de Producción",
     "empresa":"Danone",
-    "lugar":"Mendoza"
+    "lugar":"Mendoza",
+    "salario":"$300.000",
+    "img":"/danone.png"
 },
 {
     "id": "2",
-    "rubro": "Ventas",
+    "categoryId": "Ventas",
     "puesto":"Ejecutivo de Cuenta",
     "empresa":"BAT",
-    "lugar":"Rosario"
+    "lugar":"Rosario",
+    "salario":"$200.000",
+    "img":"/BAT.png"
 },
 {
     "id": "3",
-    "rubro": "Administración",
+    "categoryId": "Administración",
     "puesto":"Control de Gestión",
     "empresa":"PWC",
-    "lugar":"Córdoba"
+    "lugar":"Córdoba",
+    "salario":"$160.000",
+    "img":"/PWC.png"
 },
 {
     "id": "4",
-    "rubro": "IT",
+    "categoryId": "IT",
     "puesto":"Programador Full Stack",
     "empresa":"Globant",
-    "lugar":"Remoto"
+    "lugar":"Remoto",
+    "salario":"USD 2.000",
+    "img":"/globant.png"
 },
 {
     "id": "5",
-    "rubro": "Alimenticio",
+    "categoryId": "Alimenticio",
     "puesto":"Cocinero ",
     "empresa":"Anna Bistro",
-    "lugar":"Mendoza"
-},
-{
-    "id": "6",
-    "rubro": "Recursos Humanos",
-    "puesto":"Analista de Payroll",
-    "empresa":"Pedidos Ya",
-    "lugar":"Buenos Aires"
-},
-{
-    "id": "7",
-    "rubro": "Logística",
-    "puesto":"Coordinador de Operaciones",
-    "empresa":"Transportes Rigar",
-    "lugar":"Córdoba"
-},
-{
-    "id": "8",
-    "rubro": "Industrial",
-    "puesto":"Jefe de Mantenimiento",
-    "empresa":"General Motors",
-    "lugar":"Rosario"
-},
-{
-    "id": "9",
-    "rubro": "IT",
-    "puesto":"Sr Frontend Developer",
-    "empresa":"Kala",
-    "lugar":"Remoto"
-},
-{
-    "id": "10",
-    "rubro": "Comercial",
-    "puesto":"Preventista Mayorista",
-    "empresa":"Supermecado Mayorista Yaguar",
-    "lugar":"San Juan"
+    "lugar":"Mendoza",
+    "salario":"$180.000",
+    "img":"/anna.png"
 }
+
 
 ]

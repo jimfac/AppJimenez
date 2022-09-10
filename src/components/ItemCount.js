@@ -1,7 +1,7 @@
 import { useState } from "react"
 const ItemCount = ({stock,initial}) => {
   
-    const [counter, setCounter] = useState(1)
+    const [counter, setCounter] = useState(0)
 
     const handleClickA = () => {
         if(counter>stock){
