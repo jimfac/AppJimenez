@@ -21,8 +21,8 @@ const ItemDetailContainer = () => {
         });
     
         useEffect(() => {
-            getItem(jobsJson.find(j=> j.id === id),2000).then((res)=>{
-              setItem(res)
+            getItem(jobsJson,2000).then((res)=>{
+              setItem(res.find(j=> j.id === id))
             }).catch((err)=>console.log(err));
          }, [id])
 
