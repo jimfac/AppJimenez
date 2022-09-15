@@ -43,7 +43,15 @@
     "lugar":"Mendoza",
     "salario":"$180.000",
     "img":"/anna.png"
+},
+{
+    "id": "6",
+    "categoryId": "Alimenticio",
+    "puesto":"Cocinero ",
+    "empresa":"Sabrosura",
+    "lugar":"Mendoza",
+    "salario":"$180.000",
+    "img":"/anna.png"
 }
-
 
 ]

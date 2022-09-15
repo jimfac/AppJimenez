@@ -8,7 +8,7 @@ const ItemListContainer = () => {
   const[jobs,setJobs] = useState([]);
   const {categoryId} = useParams()
   
-  const getJobs = (data,time) =>
+  const getJobs = (data,time,idParams) =>
      new Promise((resolve,reject) => {
       setTimeout(()=> {
         if (data) {
@@ -21,8 +21,8 @@ const ItemListContainer = () => {
 
      useEffect(() => {
       if(categoryId){
-        getJobs(jobsJson.filter(c=>c.categoryId===categoryId),2000).then((res)=>{
-          setJobs(res)
+        getJobs(jobsJson,2000,categoryId).then((res)=>{
+          setJobs(res.filter(c=>c.categoryId===categoryId))
         }).catch((err)=>console.log(err,":tu categoría no exixte"));
       }else{
         getJobs(jobsJson,2000).then((res)=>{
