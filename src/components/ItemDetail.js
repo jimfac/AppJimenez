@@ -1,10 +1,12 @@
 import { useCart } from "../context/CartContext"
+import ItemCount from "./ItemCount"
+import { Link } from "react-router-dom"
 
 
 const ItemDetail = ({item}) => {
   const{postulaciones, addItem,clearCart} = useCart ()
  
-  const addHandler = (puesto) =>{
+  const addHandler = (event,puesto) =>{
     addItem (puesto)
   }
 
@@ -21,8 +23,13 @@ const ItemDetail = ({item}) => {
         <div>{item.lugar}</div>
         <div>{item.rubro}</div>
         <div>{item.salario}</div>
-
-        <button onClick ={()=>{ addHandler(item.puesto)} }className="btn"> Postularse </button>
+        <Link to={'/Cart'}>
+          <ItemCount stock = {5} initial={0}/>
+        </Link>
+        
+        
+        <button onClick ={(event)=>{ addHandler(event,item.puesto)} }className="btn"> Postularse </button>
+       
         
 
     </div>
