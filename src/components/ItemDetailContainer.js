@@ -5,8 +5,10 @@ import { useParams } from "react-router-dom"
 
 
 
+
 const ItemDetailContainer = () => {
     const [item,setItem] = useState ({})
+   
     const {id} = useParams()
   
     const getItem = (data,time) => 
@@ -30,6 +32,7 @@ const ItemDetailContainer = () => {
     return (
     <div>
         <ItemDetail item={item}/>
+        
     </div>
   )
 }
