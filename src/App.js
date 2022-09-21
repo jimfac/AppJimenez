@@ -7,6 +7,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import { CartProvider } from "./context/CartContext";
 import CartWidget from "./components/CartWidget";
 
+
 function App() {
   return (
     <div className="container">

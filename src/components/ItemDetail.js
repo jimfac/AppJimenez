@@ -1,20 +1,18 @@
 import { useCart } from "../context/CartContext"
-import ItemCount from "./ItemCount"
-import { Link } from "react-router-dom"
+
 
 
 const ItemDetail = ({item}) => {
-  const{postulaciones, addItem,clearCart} = useCart ()
+  const{ addItem,clearCart} = useCart ()
  
-  const addHandler = (event,puesto) =>{
-    addItem (puesto)
+  const addHandler = ({item}) =>{
+    addItem (item)
   }
 
   return (
 
     <div>
-        <strong>Postulaciones</strong>
-        {postulaciones.map((p,id)=> <li key={id}>{p}</li>)}
+        
         <button onClick={clearCart} className = "btn">Borrar postulacion</button>
 
         <img src={item.img} alt="" className="w-15"></img>
@@ -23,15 +21,11 @@ const ItemDetail = ({item}) => {
         <div>{item.lugar}</div>
         <div>{item.rubro}</div>
         <div>{item.salario}</div>
-        <Link to={'/Cart'}>
-          <ItemCount stock = {5} initial={0}/>
-        </Link>
+              
         
-        
-        <button onClick ={(event)=>{ addHandler(event,item.puesto)} }className="btn"> Postularse </button>
+        <button onClick ={()=>{ addHandler(item.puesto)} }className="btn"> Postularse </button>
        
-        
-
+       
     </div>
   )
 }

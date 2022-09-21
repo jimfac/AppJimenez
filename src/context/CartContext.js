@@ -12,7 +12,7 @@ const useCart = ()=> {
 const CartProvider = ({defaultValue =[],children}) => { 
     
     const [postulaciones, setPostulaciones]=useState(defaultValue)
-
+     
     const isInCart = (postulacion)=> {
         return postulaciones.some((finded)=> finded.puesto===postulacion.puesto);
         
@@ -45,7 +45,7 @@ const CartProvider = ({defaultValue =[],children}) => {
         postulaciones
         
     }
-
+    
     return(
         <CartContext.Provider value={context}>
             {children}
